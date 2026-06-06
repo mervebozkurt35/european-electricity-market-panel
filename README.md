@@ -35,11 +35,10 @@ Capacity Remuneration Mechanisms (CRMs) — including capacity auctions in Great
 ## Repository Structure
 
 ```
-├── src/
-│   ├── ember_data_process.py     # Processes Ember generation and imports data
-│   └── eu_demand_process.py      # Builds demand, peak load, and stress event panel
-├── data/                         # Raw data files (not tracked — see notes below)
-├── output/                       # Generated CSVs and plots
+├── ember_data_process.py     # Processes Ember generation and imports data
+├── european_demand_process.py      # Builds demand, peak load, and stress event panel
+├── data/                     # Raw data files (not tracked — see notes below)
+├── output/                   # Generated CSVs and plots
 └── README.md
 ```
 
@@ -60,7 +59,7 @@ Key steps:
 3. Merge generation data into existing panel dataset
 4. Validate with cross-plots of generation vs. installed capacity
 
-### `eu_demand_process.py`
+### `european_demand_process.py`
 
 Builds a complete annual demand and system stress panel from three ENTSO-E source formats plus a separate GB dataset:
 
@@ -133,7 +132,7 @@ pip install pandas numpy matplotlib openpyxl requests
 2. Run scripts in order:
 ```bash
 python src/ember_data_process.py
-python src/eu_demand_process.py
+python src/european_demand_process.py
 ```
 
 ---
