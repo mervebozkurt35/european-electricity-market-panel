@@ -133,7 +133,6 @@ Raw data files are not included in this repository. They can be downloaded from:
 - **Ember** Europe Yearly Electricity Data: https://ember-energy.org/data/european-electricity-review/
 - **ENTSO-E** Monthly Hourly Load Values: https://www.entsoe.eu/data/power-stats/
 - **NESO** (National Grid ESO) GB demand data: https://api.neso.energy/ (URLs included in script)
-- **Eurostat** Net maximum electrical capacity: https://ec.europa.eu/eurostat/web/energy/data/database
 
 Place downloaded files in the `data/` directory as described in the CONFIG section of each script.
 
